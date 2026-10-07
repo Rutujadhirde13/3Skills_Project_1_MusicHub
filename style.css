@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    height: 75px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.logo {
+    color: #1db954;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #1db954;
+}
+nav ul li:first-child a {
+    color: #1db954;
+    font-weight: bold;
+}
+
+.login-btn {
+    padding: 11px 25px;
+    border: 2px solid #1db954;
+    border-radius: 25px;
+    background: transparent;
+    color: #1db954;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #1db954;
+    color: white;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 600px;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.small-title {
+    color: #1db954;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+}
+
+.hero-content > p:not(.small-title) {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #1db954;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background: #18a349;
+}
+.main-btn {
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-3px);
+    background: #18a349;
+}
+
+.hero-image {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1db954, #0f6b35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px rgba(29, 185, 84, 0.35);
+}
+
+.music-circle {
+    font-size: 150px;
+    color: white;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+    animation: floatMusic 3s ease-in-out infinite;
+}
+
+@keyframes floatMusic {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Featured Section */
+
+.featured {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    color: #666;
+    margin-bottom: 45px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-image {
+    height: 170px;
+    background: #111;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #1db954;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    transform: scale(1.05);
+}
+
+
+/* CTA */
+
+.cta {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #080808;
+    color: white;
+    padding: 45px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-top: 1px solid #222;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer p {
+    color: #aaa;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    color: #1db954;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero-image {
+        width: 240px;
+        height: 240px;
+    }
+
+    .music-circle {
+        font-size: 100px;
+    }
+
+    .featured {
+        padding: 60px 5%;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Music Card Designs */
+
+.music-one {
+    background: linear-gradient(135deg, #1db954, #0f6b35);
+}
+
+.music-two {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.music-three {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+}
